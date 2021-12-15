@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Library</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Library</h1>
+        <hr>
+    </header>
+    <main>
+        <button id="addBook">Add Book</button>
+        <h2>My books:</h2>
+        <div id="modalContainer">
+            <form id="modal">
+                <strong>Add new book</strong>
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="text" id="pages" placeholder="# of Pages" required>
+                <div>
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" id="read">
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <div id="bookContainer">
+            
+        </div>
+    </main>
 </body>
 </html>
