@@ -22,15 +22,11 @@ header {
 }
 
 .cell {
-    border: solid 2px red;
+    border: solid 2px gray;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
-}
-
-.book {
-    line-height: 2rem;
-    font-size: 1rem;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .modal {
