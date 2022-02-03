@@ -52,10 +52,10 @@ Book.prototype.turnObjToDOMElement = function() {
 const addBookToLibrary = function() {
     let newBook = new Book(title.value, author.value, pages.value, read.value);
     myLibrary.push(newBook);
-    createCloseBtns();
     // TOP says to replace this with a loop
     // that iterates over each obj and displays it
     newBook.turnObjToDOMElement();
+    createCloseBtns();
 }
 
 function createCloseBtns() {
