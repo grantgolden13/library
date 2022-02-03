@@ -8,8 +8,8 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
-    grid-template-rows: repeat(auto-fit, 200px);;
+    grid-template-columns: repeat(auto-fit, 240px);
+    grid-template-rows: repeat(auto-fit, 248px);;
     grid-gap: 8px;
 }
 
@@ -23,10 +23,24 @@ header {
 
 .cell {
     border: solid 2px gray;
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+.cell > p {
+    padding-top: 10px;
+}
+
+.remove {
+    margin-top: 10px;
+    margin-left: 200px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    position: absolute;
 }
 
 .modal {
@@ -48,15 +62,17 @@ form {
     align-items: center;
     width: 284px;
     height: 300px;
-    border: solid 2px red;
+    border: solid 2px goldenrod;
     border-radius: 8px;
     background-color: cornsilk;
     padding: 20px;
     font-size: 1.25rem;
 }
 
-input {
-    margin: 12px;
+input,
+select,
+#submit {
+    margin: 10px;
 }
 
 #pages {
