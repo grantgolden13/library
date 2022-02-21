@@ -31,19 +31,19 @@ Book.prototype.turnObjToDOMElement = function() {
     newBookElem.append(removeBtn);
 
     const titleP = document.createElement('p');
-    titleP.textContent = `Title: ${this.title}`;
+    titleP.textContent = `🔤 Title: ${this.title}`;
     newBookElem.append(titleP);
 
     const authorP = document.createElement('p');
-    authorP.textContent = `Author: ${this.author}`;
+    authorP.textContent = `✍️ Author: ${this.author}`;
     newBookElem.append(authorP);
     
     const pagesP = document.createElement('p');
-    pagesP.textContent = `Pages: ${this.pages}`;
+    pagesP.textContent = `📖 Pages: ${this.pages}`;
     newBookElem.append(pagesP);
 
     const readP = document.createElement('p');
-    readP.textContent = `Read?: ${this.read}`;
+    readP.textContent = `🤓 Read?: ${this.read}`;
     newBookElem.append(readP);
 
     mainGrid.append(newBookElem);
