@@ -1,3 +1,3 @@
 # project-library
 
-	Recreating TOP's Project Library using Classes as opposed to object constructors 
+	A simple library application made with object constructors in JS.
