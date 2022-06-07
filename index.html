@@ -17,15 +17,15 @@
     <main>
     </main>
     <div class="modal">
-        <form id="form" name="formname">
+        <form action="#" method="POST" id="form" name="form">
             <label for="title">Title:</label>
-            <input id="title" type="text" maxlength= "32" placeholder="The Great Gatsby">
+            <input id="title" type="text" maxlength= "32" placeholder="The Great Gatsby" required>
             <label for="author">Author:</label>
-            <input id="author" type="text" maxlength= "32" placeholder="F. Scott Fitzgerald">
+            <input id="author" type="text" maxlength= "32" placeholder="F. Scott Fitzgerald" required>
             <label for="pages"># of Pages:</label>
-            <input id="pages" type="text" maxlength= "5" placeholder="269">
+            <input id="pages" type="text" maxlength= "5" placeholder="269" required>
             <label for="read">Have you read it?</label>
-            <select id="read">
+            <select id="read" required>
                 <option value="">Select one</option>
                 <option value="Haven't read yet.">Haven't read yet.</option>
                 <option value="In progress!">In Progress!</option>
