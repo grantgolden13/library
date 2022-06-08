@@ -12,34 +12,41 @@
     <div class="container">
         <header>
             <h1>Library</h1>
-            <button class="btn">Add Book</button>
+            <button class="add-book">Add Book</button>
         </header>
         <div class="book-container">
             <div class="book">
-                Test
-               <br>
-                chars
-                <br>
-                cdasfa
+                <div>Title: <span>The Great Gatsby</span></div>
+                <div>Author: <span>F. Scott Fitzgerald</span></div>
+                <div># of Pages: <span>269</span></div>
+                <div>Read?: <span>Yes</span></div>
             </div>
         </div>
     </div>
     <div class="modal">
         <form action="#" method="POST" id="form" name="form">
-            <label for="title">Title:</label>
-            <input id="title" type="text" maxlength= "32" placeholder="The Great Gatsby" required>
-            <label for="author">Author:</label>
-            <input id="author" type="text" maxlength= "32" placeholder="F. Scott Fitzgerald" required>
-            <label for="pages"># of Pages:</label>
-            <input id="pages" type="text" maxlength= "5" placeholder="269" required>
-            <label for="read">Have you read it?</label>
-            <select id="read" required>
-                <option value="">Select one</option>
-                <option value="Haven't read yet.">Haven't read yet.</option>
-                <option value="In progress!">In Progress!</option>
-                <option value="Have read it.">Have read it.</option>
-            </select>
-            <button id="submit" type="submit">Add Book</button>
+            <div class="control">
+                <label for="title">Title:</label>
+                <input id="title" type="text" maxlength= "32" placeholder="The Great Gatsby" required>
+            </div>
+            <div class="control">
+                <label for="author">Author:</label>
+                <input id="author" type="text" maxlength= "32" placeholder="F. Scott Fitzgerald" required>
+            </div>
+            <div class="control">
+                <label for="pages"># of Pages:</label>
+                <input id="pages" type="text" maxlength= "5" placeholder="269" required>
+            </div>
+            <div class="control">
+                <label for="read">Have you read it?</label>
+                <select id="read" required>
+                    <option value="">Select one</option>
+                    <option value="Haven't read yet.">Haven't read yet.</option>
+                    <option value="In progress!">In Progress!</option>
+                    <option value="Have read it.">Have read it.</option>
+                </select>
+            </div>
+            <button id="submitBtn" type="submit">Add Book</button>
         </form>
     </div>
 </body>
